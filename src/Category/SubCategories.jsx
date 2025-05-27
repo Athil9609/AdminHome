@@ -118,7 +118,6 @@ console.log(categoryId)
             <tr>
               <th>ID</th>
               <th>Name</th>
-              <th>Category ID</th>
               <th>Image</th>
               <th>Actions</th>
             </tr>
@@ -133,7 +132,6 @@ console.log(categoryId)
                 <tr key={subcat.id}>
                   <td>{subcat.id}</td>
                   <td>{subcat.name}</td>
-                  <td>{subcat.category_id}</td>
                   <td>
                     <img
                       src={subcat.sub_category_image}
