@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { Container, Form, Button, Table, Modal } from 'react-bootstrap';
 import { useNavigate, useParams } from 'react-router-dom';
 import { getSubCategories, addSubCategory, updateSubCategory, deleteSubCategory } from '../services/allApis';
+import { FaEdit, FaTrash } from 'react-icons/fa';
+
 
 const Subcategories = () => {
   const [subcategories, setSubcategories] = useState([]);
