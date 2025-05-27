@@ -4,7 +4,6 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { getSubCategories, addSubCategory, updateSubCategory, deleteSubCategory } from '../services/allApis';
 import { FaEdit, FaTrash } from 'react-icons/fa';
 
-
 const Subcategories = () => {
   const [subcategories, setSubcategories] = useState([]);
   const [form, setForm] = useState({ id: null, name: '', subcategory_image: null });
@@ -119,7 +118,7 @@ console.log(categoryId)
             <tr>
               <th>ID</th>
               <th>Name</th>
-              
+              <th>Category ID</th>
               <th>Image</th>
               <th>Actions</th>
             </tr>
@@ -143,12 +142,11 @@ console.log(categoryId)
                     />
                   </td>
                   <td>
-                                       <Button variant="btn" style={{padding:10,color:"orange"}} size="md"className="me-2" onClick={() => handleEdit(subcat)}>
+                    <Button variant="btn" style={{padding:10,color:"orange"}} size="md"className="me-2" onClick={() => handleEdit(subcat)}>
  <FaEdit/>                    </Button>
                     <Button variant="btn" style={{padding:10,color:"red"}} size="md"onClick={() => handleDelete(subcat.id)}>
                       <FaTrash/>
                     </Button>
-
                   </td>
                 </tr>
               ))
