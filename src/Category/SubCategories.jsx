@@ -141,12 +141,12 @@ console.log(categoryId)
                     />
                   </td>
                   <td>
-                    <Button variant="warning" size="sm" className="me-2" onClick={() => handleEdit(subcat)}>
-                      Edit
+                                       <Button variant="btn" style={{padding:10,color:"orange"}} size="md"className="me-2" onClick={() => handleEdit(subcat)}>
+ <FaEdit/>                    </Button>
+                    <Button variant="btn" style={{padding:10,color:"red"}} size="md"onClick={() => handleDelete(subcat.id)}>
+                      <FaTrash/>
                     </Button>
-                    <Button variant="danger" size="sm" onClick={() => handleDelete(subcat.id)}>
-                      Delete
-                    </Button>
+
                   </td>
                 </tr>
               ))
