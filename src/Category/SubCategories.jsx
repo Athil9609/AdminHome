@@ -117,7 +117,7 @@ console.log(categoryId)
             <tr>
               <th>ID</th>
               <th>Name</th>
-              <th>Category ID</th>
+              
               <th>Image</th>
               <th>Actions</th>
             </tr>
